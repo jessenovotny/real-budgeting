@@ -17,3 +17,7 @@
 //= require react_ujs
 //= require components
 //= require_tree .
+//= require bootstrap.min
+//= require contact_me
+//= require freelancer.min
+//= require jqBootstrapValidation
