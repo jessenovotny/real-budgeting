@@ -1,1 +1,1 @@
-MyApp::Application.config.secret_token = ENV['SECRET_TOKEN']
+RealBudgeting::Application.config.secret_token = ENV['SECRET_TOKEN']
