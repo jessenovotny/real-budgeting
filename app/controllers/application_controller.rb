@@ -3,5 +3,7 @@ class ApplicationController < ActionController::Base
 
   def index
     # render component: 'Home'
+    @subscriber = Subscriber.new
   end
+  
 end

@@ -1,0 +1,24 @@
+/*** DESKTOP NAV ***/
+@media (min-width:500px){
+  img#nav-brand {
+    width: 300px;
+  }
+
+  a#nav-brand {
+    padding: 0;
+    margin-top: -15px;
+  }
+}
+
+/*** MOBILE NAV ***/
+
+@media (max-width:499px){
+  img#nav-brand {
+    height: 46px;
+    margin: 2px 0 0 10px;
+  }
+
+  a#nav-brand {
+    padding: 0;
+  }
+}

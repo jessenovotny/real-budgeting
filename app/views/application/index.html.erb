@@ -1,13 +1,21 @@
 <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <%= image_tag("real_budgeting_logo.png", class: "img-responsive") %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <%= image_tag("real_budgeting_logo.png", class: "img-responsive") %>
                     <!-- <img class="img-responsive" src="assets/real_budgeting_logo.png" alt=""> -->
                     <div class="intro-text">
                         <!-- <span class="name">Real Budgeting</span> -->
                         <hr class="star-light">
                         <span class="skills">Compassionate  -  Effective  -  Simple</span>
+                    </div>
+                    <div>                        
+                        <form class="new_subscriber" id="new_subscriber" accept-charset="UTF-8" remote="true" >
+                            <input name="utf8" type="hidden" value="✓">
+                            <label for="subscriber_email">Email</label>
+                            <input type="text" name="subscriber[email]" id="subscriber_email" style="color: black;">
+                            <input type="submit" name="commit" value="Create Subscriber" >
+                        </form>
                     </div>
                 </div>
             </div>
