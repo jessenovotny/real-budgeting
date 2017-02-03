@@ -8,11 +8,7 @@ class LeadMagnetMailer < ApplicationMailer
   #
   def send_playbook(subscriber)
     @subscriber = subscriber
-    binding.pry
     attachments["budgeting-playbook.pdf"] = File.read('app/assets/documents/budgeting-playbook.pdf')
-    mail to: @subscriber.email, subject: "Real Budgeting Playbook" do |format|
-      format.text
-      format.html { render "lead_magnet_mailer/send_playbook" }
-    end
+    mail(to: @subscriber.email, bcc: "jesse@realbudgeting.com", subject: "Real Budgeting Playbook", from: 'jesse@realbudgeting.com')
   end
 end

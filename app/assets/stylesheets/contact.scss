@@ -1,0 +1,26 @@
+input.form-control{
+  color: white;
+}
+
+input.form-control::-webkit-input-placeholder{
+  color: white;
+}
+
+textarea.form-control{
+  color: white;
+}
+
+textarea.form-control::-webkit-input-placeholder{
+  color: white;
+}
+
+#send-message {
+  color: #5cb85c;
+  background-color: white;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 24px;
+  height: 50px;
+  width: 100px;
+  margin: auto;
+}

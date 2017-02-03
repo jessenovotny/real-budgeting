@@ -5,6 +5,7 @@ gem 'react-rails'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'rails_12factor', group: :production
 gem 'pry'
+gem 'dotenv'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
