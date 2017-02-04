@@ -11,13 +11,18 @@
                     <hr class="star-light">
                     <span class="skills">Compassionate  -  Effective  -  Straightforward</span>
                 </div>
-                <div>                        
-                    <form class="new_subscriber" id="new_subscriber" accept-charset="UTF-8" remote="true" >
+                <div>      
+                <%= form_for @subscriber, html: {id: "playbook"} do |f| %>
+                    <%= f.label :email %>
+                    <%= f.email_field :email, style: "color: black;"  %>                   
+                    <%= f.submit :submit %>
+                <% end %>
+                    <!-- <form class="new_subscriber" id="new_subscriber" accept-charset="UTF-8" remote="true" >
                         <input name="utf8" type="hidden" value="✓">
                         <label for="subscriber_email">Email</label>
                         <input type="text" name="subscriber[email]" id="subscriber_email" style="color: black;">
                         <input type="submit" name="commit" value="Create Subscriber" >
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
@@ -187,10 +192,10 @@
                         </div>
                     </div>
                     <br>
-                    <div id="success"></div>
+                    <div id="contactSuccess"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-success btn-lg" id="send-message">Send</button>
+                            <button type="submit" class="btn btn-success btn-lg" id="send-message contactSubmit">Send</button>
                         </div>
                     </div>
                 </form>

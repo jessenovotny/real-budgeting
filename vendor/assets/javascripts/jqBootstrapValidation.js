@@ -9,7 +9,6 @@
  */
 
 (function( $ ){
-  // debugger;
 	var createdElements = [];
 
 	var defaults = {
