@@ -6,7 +6,7 @@ class SubscribersController < ApplicationController
   end
 
   def contact_form
-    subscriber = Subscriber.find_or_create(email: params[:email])
+    subscriber = Subscriber.find_or_create_by(email: params[:email])
     ContactFormMailer.notify_admin(params).deliver
   end
 
