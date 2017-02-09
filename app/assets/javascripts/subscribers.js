@@ -26,7 +26,7 @@ $(function() {
             // additional error messages or events
         },
         submitSuccess: function($form, event) {
-            debugger;
+            // debugger;
             // Prevent spam click and default submit behaviour
             $("form#playbook submit").attr("disabled", true);
             event.preventDefault();
